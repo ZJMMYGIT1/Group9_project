@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
@@ -113,7 +115,7 @@
 		</table>
 		<div class="cart_btn w990 bc mt10">
 			<a href="index.html" class="continue">继续购物</a>
-			<a href="flow2.html" class="checkout">结 算</a>
+			<a href="flow2.jsp" class="checkout">结 算</a>
 		</div>
 	</div>
 	<!-- 主体部分 end -->

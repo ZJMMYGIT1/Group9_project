@@ -1,23 +1,24 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title>商品列表页</title>
+	<title>收货地址</title>
 	<link rel="stylesheet" href="style/base.css" type="text/css">
 	<link rel="stylesheet" href="style/global.css" type="text/css">
 	<link rel="stylesheet" href="style/header.css" type="text/css">
-	<link rel="stylesheet" href="style/list.css" type="text/css">
-	<link rel="stylesheet" href="style/common.css" type="text/css">
+	<link rel="stylesheet" href="style/home.css" type="text/css">
+	<link rel="stylesheet" href="style/address.css" type="text/css">
 	<link rel="stylesheet" href="style/bottomnav.css" type="text/css">
 	<link rel="stylesheet" href="style/footer.css" type="text/css">
-	
+
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/header.js"></script>
-	<script type="text/javascript" src="js/list.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
 </head>
 <body>
-	<!-- 顶部导航 start -->
+		<!-- 顶部导航 start -->
 	<div class="topnav">
 		<div class="topnav_bd w1210 bc">
 			<div class="topnav_left">
@@ -80,9 +81,9 @@
 						</div>
 						<div class="uclist mt10">
 							<ul class="list1 fl">
-								<li><a href="user.html">用户信息></a></li>
-								<li><a href="order.html">我的订单></a></li>
-								<li><a href="address.html">收货地址></a></li>
+								<li><a href="">用户信息></a></li>
+								<li><a href="">我的订单></a></li>
+								<li><a href="">收货地址></a></li>
 								<li><a href="">我的收藏></a></li>
 							</ul>
 
@@ -112,7 +113,7 @@
 			<div class="cart fl">
 				<dl>
 					<dt>
-						<a href="flow1.html">去购物车结算</a>
+						<a href="">去购物车结算</a>
 						<b></b>
 					</dt>
 					<dd>
@@ -132,7 +133,7 @@
 		<div class="nav w1210 bc mt10">
 			<!--  商品分类部分 start-->
 			<div class="category fl cat1"> <!-- 非首页，需要添加cat1类 -->
-				<div class="cat_hd off">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，并将cat_bd设置为不显示，鼠标滑过时展开菜单则将off类换成on类 -->
+				<div class="cat_hd">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，鼠标滑过时展开菜单则将off类换成on类 -->
 					<h2>全部商品分类</h2>
 					<em></em>
 				</div>
@@ -141,7 +142,7 @@
 					
 					<div class="cat item1">
 						<h3><a href="">图像、音像、数字商品</a> <b></b></h3>
-						<div class="cat_detail none">
+						<div class="cat_detail">
 							<dl class="dl_1st">
 								<dt><a href="">电子书</a></dt>
 								<dd>
@@ -237,7 +238,7 @@
 							</dl>
 
 							<dl>
-								<dt><a href="https://diannao.jd.com/">科技</a></dt>
+								<dt><a href="">科技</a></dt>
 								<dd>
 									<a href="">科普</a>
 									<a href="">建筑</a>
@@ -407,10 +408,10 @@
 
 			<div class="navitems fl">
 				<ul class="fl">
-					<li class="current"><a href="index.html">首页</a></li>
-					<li><a href="computerlist.html">电脑频道</a></li>
-					<li><a href="electriclist.html">家用电器</a></li>
-					<li><a href="yifulist.html">服装城</a></li>
+					<li class="current"><a href="">首页</a></li>
+					<li><a href="">电脑频道</a></li>
+					<li><a href="">家用电器</a></li>
+					<li><a href="">品牌大全</a></li>
 					<li><a href="">团购</a></li>
 					<li><a href="">积分商城</a></li>
 					<li><a href="">夺宝奇兵</a></li>
@@ -421,205 +422,133 @@
 		<!-- 导航条部分 end -->
 	</div>
 	<!-- 头部 end-->
-
+	
 	<div style="clear:both;"></div>
 
-	<!-- 列表主体 start -->
-	<div class="list w1210 bc mt10">
-		<!-- 面包屑导航 start -->
-		<div class="breadcrumb">
-			<h2>当前位置：<a href="index.html">首页</a> > <a href="electriclist.html">家用电器</a></h2>
+	<!-- 页面主体 start -->
+	<div class="main w1210 bc mt10">
+		<div class="crumb w1210">
+			<h2><strong>我的XX </strong><span>> 我的订单</span></h2>
 		</div>
-		<!-- 面包屑导航 end -->
-
-		<!-- 左侧内容 start -->
-		<div class="list_left fl mt10">
-			<!-- 分类列表 start -->
-			<div class="catlist">
-				<h2>冰箱</h2>
-				<div class="catlist_wrap">
-					<div class="child">
-						<h3 class="on"><b></b>双开门</h3>
-						<ul>
-							<li><a href="">大容量</a></li>
-							<li><a href="">低能耗</a></li>
-							<li><a href="">环保</a></li>
-						</ul>
-					</div>
-
-					<div class="child">
-						<h3><b></b>电视</h3>
-						<ul class="none">
-							<li><a href="">小米</a></li>
-							<li><a href="">海信</a></li>
-							<li><a href="">三星</a></li>
-						</ul>
-					</div>
-
-					<div class="child">
-						<h3><b></b>厨具</h3>
-						<ul class="none">
-							<li><a href="">抽油烟机</a></li>
-							<li><a href="">微波炉</a></li>
-							<li><a href="">洗碗机</a></li>
-							</li>
-						</ul>
-					</div>
-
-					<div class="child">
-						<h3><b></b>空调</h3>
-						<ul class="none">
-							<li><a href="">格力</a></li>
-							<li><a href="">海尔</a></li>
-							<li><a href="">美的</a></li>
-							</li>
-						</ul>
-					</div>
-
-					<div class="child">
-						<h3><b></b>洗衣机</h3>
-						<ul class="none">
-							<li><a href="">美的</a></li>
-							<li><a href="">奔腾</a></li>
-							<li><a href="">长虹</a></li>
-						</ul>
-					</div>
-				</div>
-				
-				<div style="clear:both; height:1px;"></div>
-			</div>
-			<!-- 分类列表 end -->
-				
-			<div style="clear:both;"></div>	
-
-			
-
-			
-			<!-- 最近浏览 start -->
-			<div class="viewd leftbar mt10">
-				<h2><a href="">清空</a><strong>最近浏览过的商品</strong></h2>
-				<div class="leftbar_wrap">
-					<dl>
-						<dt><a href=""><img src="images/hpG4.jpg" alt="" /></a></dt>
-						<dd><a href="">小米高清电视机.</a></dd>
-					</dl>
-
-					<dl class="last">
-						<dt><a href=""><img src="images/crazy4.jpg" alt="" /></a></dt>
-						<dd><a href="">长虹电视机</a></dd>
-					</dl>
-				</div>
-			</div>
-			<!-- 最近浏览 end -->
-		</div>
-		<!-- 左侧内容 end -->
-	
-		<!-- 列表内容 start -->
-		<div class="list_bd fl ml10 mt10">
-			<!-- 热卖、促销 start -->
-			<div class="list_top">
-				<!-- 热卖推荐 start -->
-				<div class="hotsale fl">
-					<h2><strong><span class="none">热卖推荐</span></strong></h2>
-					<ul>
-						<li>
-							<dl>
-								<dt><a href="goods.html"><img src="/img/O1CN01CdpxuT29zFhHXO2cW_!!0-item_pic.jpg" alt="" /></a></dt>
-								<dd class="name"><a href="goods.html">小米高清电视机</a></dd>
-								<dd class="price">特价：<strong>￥3999.00</strong></dd>
-								<dd class="buy"><span>立即抢购</span></dd>
-							</dl>
-						</li>
-
-						<li>
-							<dl>
-								<dt><a href=""><img src="/img/O1CN01CdpxuT29zFhHXO2cW_!!0-item_pic.jpg" alt="" /></a></dt>
-								<dd class="name"><a href="">长虹电视机</a></dd>
-								<dd class="price">特价：<strong>￥4199.00</strong></dd>
-								<dd class="buy"><span>立即抢购</span></dd>
-							</dl>
-						</li>
-
-						
-					</ul>
-				</div>
-				<!-- 热卖推荐 end -->
-
-				
-			</div>
-			<!-- 热卖、促销 end -->
-			
-			<div style="clear:both;"></div>
-			
-			
-			
-			<div style="clear:both;"></div>
-
-			<!-- 排序 start -->
-			<div class="sort mt10">
+		
+		<!-- 左侧导航菜单 start -->
+		<div class="menu fl">
+			<h3>我的XX</h3>
+			<div class="menu_wrap">
 				<dl>
-					<dt>排序：</dt>
-					<dd class="cur"><a href="">销量</a></dd>
-					<dd><a href="">价格</a></dd>
-					<dd><a href="">评论数</a></dd>
-					<dd><a href="">上架时间</a></dd>
+					<dt>订单中心 <b></b></dt>
+					<dd><b>.</b><a href="">我的订单</a></dd>
+					<dd><b>.</b><a href="">我的关注</a></dd>
+					<dd><b>.</b><a href="">浏览历史</a></dd>
+					<dd><b>.</b><a href="">我的团购</a></dd>
+				</dl>
+
+				<dl>
+					<dt>账户中心 <b></b></dt>
+					<dd class="cur"><b>.</b><a href="">账户信息</a></dd>
+					<dd><b>.</b><a href="">账户余额</a></dd>
+					<dd><b>.</b><a href="">消费记录</a></dd>
+					<dd><b>.</b><a href="">我的积分</a></dd>
+					<dd><b>.</b><a href="">收货地址</a></dd>
+				</dl>
+
+				<dl>
+					<dt>订单中心 <b></b></dt>
+					<dd><b>.</b><a href="">返修/退换货</a></dd>
+					<dd><b>.</b><a href="">取消订单记录</a></dd>
+					<dd><b>.</b><a href="">我的投诉</a></dd>
 				</dl>
 			</div>
-			<!-- 排序 end -->
-			
-			<div style="clear:both;"></div>
+		</div>
+		<!-- 左侧导航菜单 end -->
 
-			<!-- 商品列表 start-->
-			<div class="goodslist mt10">
-				<ul>
-					<li>
-						<dl>
-							<dt><a href=""><img src="/img/O1CN01CdpxuT29zFhHXO2cW_!!0-item_pic.jpg" alt="" /></a></dt>
-							<dd><a href="">小米电视机（2K超高清 2G 500G DVD 互联网）60英寸显示器</a></dt>
-							<dd><strong>￥6399.00</strong></dt>
-							<dd><a href=""><em>已有10人评价</em></a></dt>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<dt><a href=""><img src="/img/binx.jpg" alt="" /></a></dt>
-							<dd><a href="">美的智能冰箱（迷你容量 亲是必备神奇）60英寸显示器</a></dt>
-							<dd><strong>￥6399.00</strong></dt>
-							<dd><a href=""><em>已有10人评价</em></a></dt>
-						</dl>
-					</li>
+		<!-- 右侧内容区域 start -->
+		<div class="content fl ml10">
+			<div class="address_hd">
+				<h3>收货地址薄</h3>
+				<dl>
+					<dt>1.王超平 北京市 昌平区 建材城西路金燕龙办公楼一层 13555555555 </dt>
+					<dd>
+						<a href="">修改</a>
+						<a href="">删除</a>
+						<a href="">设为默认地址</a>
+					</dd>
+				</dl>
+				<dl class="last"> <!-- 最后一个dl 加类last -->
+					<dt>2.王超平 湖北省 武汉市 武昌 关山光谷软件园1号201 13333333333 </dt>
+					<dd>
+						<a href="">修改</a>
+						<a href="">删除</a>
+						<a href="">设为默认地址</a>
+					</dd>
+				</dl>
 
-					
-				</ul>
 			</div>
-			<!-- 商品列表 end-->
 
-			<!-- 分页信息 start -->
-			<div class="page mt20">
-				<a href="">首页</a>
-				<a href="">上一页</a>
-				<a href="">1</a>
-				<a href="">2</a>
-				<a href="" class="cur">3</a>
-				<a href="">4</a>
-				<a href="">5</a>
-				<a href="">下一页</a>
-				<a href="">尾页</a>&nbsp;&nbsp; 
-				<span>
-					<em>共8页&nbsp;&nbsp;到第 <input type="text" class="page_num" value="3"/> 页</em>
-					<a href="" class="skipsearch" href="javascript:;">确定</a>
-				</span>
-			</div>
-			<!-- 分页信息 end -->
+			<div class="address_bd mt10">
+				<h4>新增/修改收货地址</h4>
+				<form action="" name="address_form">
+						<ul>
+							<li>
+								<label for=""><span>*</span>收 货 人：</label>
+								<input type="text" name="" class="txt" />
+							</li>
+							<li>
+								<label for=""><span>*</span>所在地区：</label>
+								<select name="" id="">
+									<option value="">请选择</option>
+									<option value="">北京</option>
+									<option value="">上海</option>
+									<option value="">天津</option>
+									<option value="">重庆</option>
+									<option value="">武汉</option>
+								</select>
+
+								<select name="" id="">
+									<option value="">请选择</option>
+									<option value="">朝阳区</option>
+									<option value="">东城区</option>
+									<option value="">西城区</option>
+									<option value="">海淀区</option>
+									<option value="">昌平区</option>
+								</select>
+
+								<select name="" id="">
+									<option value="">请选择</option>
+									<option value="">西二旗</option>
+									<option value="">西三旗</option>
+									<option value="">三环以内</option>
+								</select>
+							</li>
+							<li>
+								<label for=""><span>*</span>详细地址：</label>
+								<input type="text" name="" class="txt address"  />
+							</li>
+							<li>
+								<label for=""><span>*</span>手机号码：</label>
+								<input type="text" name="" class="txt" />
+							</li>
+							<li>
+								<label for="">&nbsp;</label>
+								<input type="checkbox" name="" class="check" />设为默认地址
+							</li>
+							<li>
+								<label for="">&nbsp;</label>
+								<input type="submit" name="" class="btn" value="保存" />
+							</li>
+						</ul>
+					</form>
+			</div>	
 
 		</div>
-		<!-- 列表内容 end -->
+		<!-- 右侧内容区域 end -->
 	</div>
-	<!-- 列表主体 end-->
+	<!-- 页面主体 end-->
 
 	<div style="clear:both;"></div>
+
 	<!-- 底部导航 start -->
-	<div class="bottomnav w1210 bc mt20">
+	<div class="bottomnav w1210 bc mt10">
 		<div class="bnav1">
 			<h3><b></b> <em>购物指南</em></h3>
 			<ul>
@@ -708,7 +637,5 @@
 		</p>
 	</div>
 	<!-- 底部版权 end -->
-
-
 </body>
 </html>

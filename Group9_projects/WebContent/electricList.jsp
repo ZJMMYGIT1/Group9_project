@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
@@ -407,9 +411,9 @@
 			<div class="navitems fl">
 				<ul class="fl">
 					<li class="current"><a href="index.html">首页</a></li>
-					<li><a href="computerlist.html">电脑频道</a></li>
-					<li><a href="electriclist.html">家用电器</a></li>
-					<li><a href="yifulist.html">服装城</a></li>
+					<li><a href="computerList.jsp">电脑频道</a></li>
+					<li><a href="electricList.jsp">家用电器</a></li>
+					<li><a href="clothesList.jsp">服装城</a></li>
 					<li><a href="">团购</a></li>
 					<li><a href="">积分商城</a></li>
 					<li><a href="">夺宝奇兵</a></li>
@@ -427,7 +431,7 @@
 	<div class="list w1210 bc mt10">
 		<!-- 面包屑导航 start -->
 		<div class="breadcrumb">
-			<h2>当前位置：<a href="index.html">首页</a> > <a href="electriclist.html">服装城</a></h2>
+			<h2>当前位置：<a href="index.html">首页</a> > <a href="electricList.jsp">家用电器</a></h2>
 		</div>
 		<!-- 面包屑导航 end -->
 
@@ -435,52 +439,52 @@
 		<div class="list_left fl mt10">
 			<!-- 分类列表 start -->
 			<div class="catlist">
-				<h2>上装</h2>
+				<h2>冰箱</h2>
 				<div class="catlist_wrap">
 					<div class="child">
-						<h3 class="on"><b></b>秋冬</h3>
+						<h3 class="on"><b></b>双开门</h3>
 						<ul>
-							<li><a href="">夏季</a></li>
-							<li><a href="">春季</a></li>
-							<li><a href="">长款</a></li>
+							<li><a href="">大容量</a></li>
+							<li><a href="">低能耗</a></li>
+							<li><a href="">环保</a></li>
 						</ul>
 					</div>
 
 					<div class="child">
-						<h3><b></b>下装</h3>
+						<h3><b></b>电视</h3>
 						<ul class="none">
-							<li><a href="">长裤</a></li>
-							<li><a href="">5分</a></li>
-							<li><a href="">加厚</a></li>
+							<li><a href="">小米</a></li>
+							<li><a href="">海信</a></li>
+							<li><a href="">三星</a></li>
 						</ul>
 					</div>
 
 					<div class="child">
-						<h3><b></b>鞋履</h3>
+						<h3><b></b>厨具</h3>
 						<ul class="none">
-							<li><a href="">凉鞋</a></li>
-							<li><a href="">皮鞋</a></li>
-							<li><a href="">运动鞋</a></li>
+							<li><a href="">抽油烟机</a></li>
+							<li><a href="">微波炉</a></li>
+							<li><a href="">洗碗机</a></li>
 							</li>
 						</ul>
 					</div>
 
 					<div class="child">
-						<h3><b></b>搭配</h3>
+						<h3><b></b>空调</h3>
 						<ul class="none">
-							<li><a href="">包</a></li>
-							<li><a href="">项链</a></li>
-							<li><a href="">配饰</a></li>
+							<li><a href="">格力</a></li>
+							<li><a href="">海尔</a></li>
+							<li><a href="">美的</a></li>
 							</li>
 						</ul>
 					</div>
 
 					<div class="child">
-						<h3><b></b>头饰</h3>
+						<h3><b></b>洗衣机</h3>
 						<ul class="none">
-							<li><a href="">帽子</a></li>
-							<li><a href="">太阳镜</a></li>
-							
+							<li><a href="">美的</a></li>
+							<li><a href="">奔腾</a></li>
+							<li><a href="">长虹</a></li>
 						</ul>
 					</div>
 				</div>
@@ -499,13 +503,13 @@
 				<h2><a href="">清空</a><strong>最近浏览过的商品</strong></h2>
 				<div class="leftbar_wrap">
 					<dl>
-						<dt><a href=""><img src="/img/14-10-06-85-438653.jpg" alt="" /></a></dt>
-						<dd><a href="">精品女装</a></dd>
+						<dt><a href=""><img src="images/hpG4.jpg" alt="" /></a></dt>
+						<dd><a href="">小米高清电视机.</a></dd>
 					</dl>
 
 					<dl class="last">
-						<dt><a href=""><img src="/img/14-10-06-85-438653.jpg" alt="" /></a></dt>
-						<dd><a href="">时尚羽绒服</a></dd>
+						<dt><a href=""><img src="images/crazy4.jpg" alt="" /></a></dt>
+						<dd><a href="">长虹电视机</a></dd>
 					</dl>
 				</div>
 			</div>
@@ -523,14 +527,21 @@
 					<ul>
 						<li>
 							<dl>
-								<dt><a href=""><img src="/img/14-10-06-85-438653.jpg" alt="" /></a></dt>
-								<dd class="name"><a href="">长款羽绒服</a></dd>
+								<dt><a href="goods.html"><img src="/img/O1CN01CdpxuT29zFhHXO2cW_!!0-item_pic.jpg" alt="" /></a></dt>
+								<dd class="name"><a href="goods.html">小米高清电视机</a></dd>
 								<dd class="price">特价：<strong>￥3999.00</strong></dd>
 								<dd class="buy"><span>立即抢购</span></dd>
 							</dl>
 						</li>
 
-						
+						<li>
+							<dl>
+								<dt><a href=""><img src="/img/O1CN01CdpxuT29zFhHXO2cW_!!0-item_pic.jpg" alt="" /></a></dt>
+								<dd class="name"><a href="">长虹电视机</a></dd>
+								<dd class="price">特价：<strong>￥4199.00</strong></dd>
+								<dd class="buy"><span>立即抢购</span></dd>
+							</dl>
+						</li>
 
 						
 					</ul>
@@ -565,13 +576,21 @@
 			<div class="goodslist mt10">
 				<ul>
 					<li>
-							<dl>
-								<dt><a href=""><img src="/img/14-10-06-85-438653.jpg" alt="" /></a></dt>
-								<dd class="name"><a href="">长款羽绒服</a></dd>
-								<dd class="price">特价：<strong>￥3999.00</strong></dd>
-								<dd class="buy"><span>立即抢购</span></dd>
-							</dl>
-						</li>
+						<dl>
+							<dt><a href=""><img src="/img/O1CN01CdpxuT29zFhHXO2cW_!!0-item_pic.jpg" alt="" /></a></dt>
+							<dd><a href="">小米电视机（2K超高清 2G 500G DVD 互联网）60英寸显示器</a></dt>
+							<dd><strong>￥6399.00</strong></dt>
+							<dd><a href=""><em>已有10人评价</em></a></dt>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href=""><img src="/img/binx.jpg" alt="" /></a></dt>
+							<dd><a href="">美的智能冰箱（迷你容量 亲是必备神奇）60英寸显示器</a></dt>
+							<dd><strong>￥6399.00</strong></dt>
+							<dd><a href=""><em>已有10人评价</em></a></dt>
+						</dl>
+					</li>
 
 					
 				</ul>

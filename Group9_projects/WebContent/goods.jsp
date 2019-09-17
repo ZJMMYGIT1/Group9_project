@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
@@ -447,7 +449,7 @@
 	<div class="main w1210 mt10 bc">
 		<!-- 面包屑导航 start -->
 		<div class="breadcrumb">
-			<h2>当前位置：<a href="index.html">首页</a> > <a href="computerlist.html">电脑、办公</a> > ThinkPad X230(23063T4）12.5英寸笔记本</h2>
+			<h2>当前位置：<a href="index.html">首页</a> > <a href="computerList.jsp">电脑、办公</a> > ThinkPad X230(23063T4）12.5英寸笔记本</h2>
 		</div>
 		<!-- 面包屑导航 end -->
 		

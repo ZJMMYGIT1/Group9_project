@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
@@ -309,7 +311,7 @@
 		</div>
 
 		<div class="fillin_ft">
-			<a href="flow3.html"><span>提交订单</span></a>
+			<a href="flow3.jsp"><span>提交订单</span></a>
 			<p>应付总额：<strong>￥5076.00元</strong></p>
 			
 		</div>
