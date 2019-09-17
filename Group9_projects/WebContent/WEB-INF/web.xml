@@ -37,7 +37,7 @@
 	<servlet-mapping>
 		<servlet-name>springmvc-first</servlet-name>
 		<!-- 设置所有以action结尾的请求进入SpringMVC -->
-		<url-pattern>/</url-pattern>
+		<url-pattern></url-pattern>
 	</servlet-mapping>
 	
 </web-app>
