@@ -10,20 +10,25 @@
 	<!-- 配置controller注解扫描包 扫描的是处理器的包 自己定义的controller包 -->
 	<context:component-scan base-package="group9.controller" />
 	
+	
+	
 	<!-- 注解驱动  在处理器配置位置 添加转换服务-->
-    <mvc:annotation-driven  />
-	
-	
+    <mvc:annotation-driven />
 	
 	
 	<!-- 配置视图解析器   -->
-	<bean
+	<!-- <bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<!-- 配置逻辑视图的前缀 实现在Controller中 不需要写前面路径 -->
+		配置逻辑视图的前缀 实现在Controller中 不需要写前面路径
 		<property name="prefix" value="/WEB-INF/jsp/" />
-		<!-- 配置逻辑视图的后缀   实现在Controller中 不需要后面文件类型-->
+		配置逻辑视图的后缀   实现在Controller中 不需要后面文件类型
 		<property name="suffix" value=".jsp" />
+	</bean> -->
+	<!-- 文件上传,id必须设置为multipartResolver -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 设置文件上传大小 -->
+		<property name="maxUploadSize" value="5000000" />
 	</bean>
-	
 	
 </beans>
